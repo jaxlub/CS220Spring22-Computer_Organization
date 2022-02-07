@@ -1,3 +1,4 @@
+// // Good James.
 // Homework 1 Due Friday Jan 28th
 // Jax Lubkowitz, CS220 Spring 22
 
