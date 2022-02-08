@@ -1,11 +1,15 @@
 #include "int2bin.h"
 #include <stdio.h>
 
-int main(void){
+int main(void){	
 	int userInput = 0;
-	int boolean = 0; // 0 = true, 1 = negative; true when number is positive integer.
+	int boolean = 0; // 0 = true, 1 = false; true when number is positive integer.
 	printf("Enter an Int:");
 	scanf("%d",&userInput);
+	if (userInput <= 0){
+			boolean = 1;
+			printf("Bye!");
+		} 
 	while (boolean == 0){
 		if (userInput <= 0){
 			boolean = 1;
@@ -13,7 +17,7 @@ int main(void){
 			break;
 		} 
 		int2bin(userInput);
-		printf("\n");			
+		//printf("\n");			
 		printf("Enter an Int:");
 		scanf("%d",&userInput);
 	}
