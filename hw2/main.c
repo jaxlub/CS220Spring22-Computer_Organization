@@ -1,3 +1,5 @@
+// int2bin doesn't seem to work? Try and get started earlier Jax.
+// So you can stop in and ask questions. 10/20
 #include "int2bin.h"
 #include <stdio.h>
 
