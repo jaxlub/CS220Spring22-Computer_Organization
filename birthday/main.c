@@ -2,7 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main(int argc, char *argv[]){
-	// TODO verify command line is all good. 
+
+	if(argc != 3){
+		printf("Error: no number specified or too many specifications\n");
+		return 0;
+	}
+	
+
 	int n = atoi(argv[1]);
 	int sum = 0;
 	int runs = atoi(argv[2]);
