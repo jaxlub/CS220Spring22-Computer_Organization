@@ -6,6 +6,10 @@
 
 int main(int argc, char *argv[]){
 	//TODO sanitize command line
+	if(argc != 2){
+		printf("Error: no number specified or too many specifications\n");
+		return 0;
+	}
 	BigInt *x = make_int(argv[1]);
 	BigInt *z = mul10(x);	
 	print_int(z);
